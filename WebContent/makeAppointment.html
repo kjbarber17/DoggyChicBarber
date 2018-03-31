@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Make an Appointment</title>
+</head>
+<body>
+<h1> Make an Appointment</h1>
+Thank you for selecting Doggy Chic for your grooming needs.  Let's schedule an appointment for your dog!<br/><br/>
+<form action = "addAppointmentServlet" method="post">
+<label for = "appointmentDate">Please input an appointment date:</label>
+<input type = "date" id = "appointmentDate" name = "appointmentDate"><br/><br/>
+<label for="startTime">Please select appointment time: </label>
+  <input id="startTime" type="time" name="startTime"><br/><br/>
+Select Service Package: <select name = "planName">
+	<option value = "basic">Wash, dry, and nail trim - $30</option>
+	<option value = "premium">Wash, dry, nail trim, haircut - $40</option>
+	<option value = "super">Wash, dry, nail trim, haircut, and furminator - $50</option>
+	</select><br/><br/>
+<input type = "submit" value = "Schedule Appointment">
+</form>
+</body>
+</html>
